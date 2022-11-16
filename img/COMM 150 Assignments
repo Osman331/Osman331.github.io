@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+</html>
+    <head> 
+        <title>
+            How to add a link to a web Page
+        </title>
+        </head>
+        <body>
+            <h1>
+                How to add a link to a Webpage
+            </h1>
+            <a href="http://www.yahoo.com">
+                goes to assignment 8C
+            </a>
+        </body>
+</html>

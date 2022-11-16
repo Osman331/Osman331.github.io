@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+   <title>The Place ~ Tokeh Beach Resort- Sierra Leone </title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <style>
+       img {
+           width: 400px;
+       }
+   </style>
+   <scipt src="script.js" defer></scipt>
+   <link href="style.css" rel="stylesheet">
+</head>
+</html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="script.js" defer></script>
+<link href="styles.css" rel="stylesheet">
+<title>Tabs</title>
+<h1>
+  The Place ~Tokeh Beach Resort
+</h1>
+<style>
+ body {
+   background: greenyellow
+ 
+ }
+</style>
+ 
+</body>
+<ul>
+   <li data-tab-target="#Info" class="active tab">Info</li>
+   <li data-tab-target="#pricing" class="tab">Pricing</li>
+   <li data-tab-target="#about" class="tab">About</li>
+</ul>
+ 
+ 
+   <div class="tab-content">
+       <div id="Info" data-tab-content class="active">
+         <h1>Info</h1>
+         <p>The Place at Tokeh Beach is Sierra Leone's Premier Beach Resort, offering the perfect location for a weekend getaway or group retreat. Our range of luxurious suites, beach-side restaurant and fully equipped conference centre ensure that all needs are catered for at The Place at Tokeh Beach.</p>
+       </div>
+       <div id="pricing" data-tab-content>
+         <h1>Pricing</h1>
+         <p>Some information on pricing</p>
+       </div>
+       <div id="about" data-tab-content>
+         <h1>About</h1>
+         <p>Let me tell you about me</p>
+       </div>
+ 
+<body>
+   <img src="Tokeh Beach Resort.jpeg" alt="">
+   <p> Tokeh Also known as Tokeh Town is a coastal resort town along the peninsula in the Western Area Rural District of Sierra Leone. Tokeh lies approximately twenty miles east of Freetown and near the neighborhood town of York. The major economic activity in Tokeh is fishing and tourism.
+       Tokeh is home to a large resort of sand beaches known collectively as Tokeh Beach, which attract a large number of tourists to the town. Tokeh beach is one of the largest and most attractive beaches in West Africa. Tokeh is also known for its mountains, forests, resort hotels, and nearby Tokeh Island, an uninhabited island a short boat ride from Tokeh town.</p>
+   </body>
+   </html>
