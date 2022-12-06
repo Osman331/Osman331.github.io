@@ -12,21 +12,22 @@
 <tw-storydata name="Untitled Story" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="47B1840F-8BE4-4148-9D55-1AADDC8415CC" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">(set: $color to "red")</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="675,350" size="100,100">
 [[Start the Adventure]]
 
-&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/11/13/22/12/compass-2946959_1280.jpg&quot;&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Start the Adventure" tags="" position="675,475" size="100,100">
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/11/13/22/12/compass-2946959_1280.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="2" name="Start the Adventure" tags="" position="675,475" size="100,100">
 What do you prefer 
 
-[[calm enviorment]]
-[[exciting enviormnment]]
+[[calm environment]]
+[[exciting environment]]
 
-</tw-passagedata><tw-passagedata pid="3" name="calm enviorment" tags="" position="675,600" size="100,100">you are walking through a wardrobe and are required to pick a climate. Which do you prefer 
+</tw-passagedata><tw-passagedata pid="3" name="calm environment" tags="" position="675,600" size="100,100">you are walking through a wardrobe and are required to pick a climate. Which do you prefer 
 
 [[snowy]]
-[[rainy]]</tw-passagedata><tw-passagedata pid="4" name="exciting enviormnment" tags="" position="800,600" size="100,100">Since you wanted exictement, you are put in a portal and have to choose where you want to teleoport
+[[rainy]]</tw-passagedata><tw-passagedata pid="4" name="exciting environment" tags="" position="800,600" size="100,100">Since you wanted exictement, you are put in a portal and have to choose where you want to teleoport
 &lt;img src=&quot;https://cdn.pixabay.com/photo/2019/06/22/12/53/trees-4291517_1280.jpg&quot;&gt;
 
 [[Volcanic]]
-[[Tropical]]</tw-passagedata><tw-passagedata pid="5" name="Volcanic" tags="" position="925,725" size="100,100">&lt;img src= https://cdn.pixabay.com/photo/2016/11/08/05/13/acid-1807514_1280.jpg&gt;</tw-passagedata><tw-passagedata pid="6" name="snowy" tags="" position="575,725" size="100,100">There is a chest but its covered in show 
+[[Tropical]]</tw-passagedata><tw-passagedata pid="5" name="Volcanic" tags="" position="925,725" size="100,100">&lt;img src= https://cdn.pixabay.com/photo/2016/11/08/05/13/acid-1807514_1280.jpg&gt;
+
+you arrive  at the volcano and there is steam. Choose between going into the [[water]] and going into the [[village]]</tw-passagedata><tw-passagedata pid="6" name="snowy" tags="" position="575,725" size="100,100">There is a chest but its covered in snow
 &lt;img src= https://cdn.pixabay.com/photo/2014/05/01/11/44/crystals-335429_1280.jpg &gt;
 
 [[chest]]
@@ -46,41 +47,61 @@ What do you prefer
 (if: $chest_opened is &#39;true&#39;)[You look in the chest and see nothing but cobwebs]
 (else:) [you look at the chest and find that it is unlocked. You open it, but you find nothing inside(set: $chest_opened to &#39;true&#39;)]
 
-[[go back to the snowy-&gt;snowy]]</tw-passagedata><tw-passagedata pid="10" name="open your eyes" tags="" position="775,1100" size="100,100">
+[[go back to the snowy-&gt;snowy]]</tw-passagedata><tw-passagedata pid="10" name="open your eyes" tags="" position="775,1175" size="100,100">your eyes open, breaking $hoursAsleep hours of sleep.
 
 (if: $hoursAsleep is 8) [your eyes flutter open given you vantage to a stream of yellow lights washing over the bulkhead]
 
-(if: $hoursAsleep &gt; 8) [your eyes crack open breaking a seal of gunk welded in place from $hoursAsleepr hours of sleep]
+(if: $hoursAsleep &gt; 8) [your eyes crack open breaking a seal of gunk welded in place from $hoursAsleep hours of sleep]
 
-your eyes crack open at the sight of rain and it splashes on your face</tw-passagedata><tw-passagedata pid="11" name="sleep" tags="" position="1000,1100" size="100,100">you close your lids tight, embracing the whirlwind of drowsiness
+</tw-passagedata><tw-passagedata pid="11" name="sleep" tags="" position="1050,1125" size="100,100">you close your eyes embracing the drowsiness.
 
-(if:$hoursAsleep &lt; 12) [[sleep]]
-
-(set: $hourAsleep to $hoursAsleep + 1)
-
+(set: $hoursAsleep to $hoursAsleep + 1)
+[[sleep]] 
 [[open your eyes]] 
 
-&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/11/13/22/12/compass-2946959_1280.jpg&quot;&gt;
-</tw-passagedata><tw-passagedata pid="12" name="asleep" tags="" position="825,975" size="100,100">Even in sleep you find the gentle buzz of all your computers, coolng systems and oxogen scrubs to be reassuring. Yet even in sleep something is off, you feel yourself waking up, what do you do??
+</tw-passagedata><tw-passagedata pid="12" name="asleep" tags="" position="825,975" size="100,100">Even in sleep you find the gentle buzz of the sounds around you starting to wake you up.  you feel yourself waking up, what do you do??
 
 [[open your eyes]]
 [[sleep]]
 
-(set:$hoursasleep to 8)</tw-passagedata><tw-passagedata pid="13" name="the door on the left" tags="" position="525,1100" size="100,100">There is white on the walls but no keys. You [[enter it | next room]]
-(set: $hasKey to &#39;false&#39;)[]</tw-passagedata><tw-passagedata pid="14" name="the door on the right" tags="" position="650,1150" size="100,100">The door closes and locke behind you. You are now in a narrow hallway with the the doors painted red. On the ground their is a key and you bend down to pick it up to [[enter it| next room]]
-(set: $hasKey to &#39;true&#39;)[]</tw-passagedata><tw-passagedata pid="15" name=" next room" tags="" position="650,1275" size="100,100">you walk into the big boring break room. There is a pop machine and some tables.
+(set:$hoursAsleep to 8)</tw-passagedata><tw-passagedata pid="13" name="the door on the left" tags="" position="525,1100" size="100,100">There is white on the walls but no keys. You [[enter it | next room]]
+(set: $hasKey to &#39;false&#39;)[]
 
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/08/06/22/20/interior-2596976_1280.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="14" name="the door on the right" tags="" position="650,1150" size="100,100">The door closes and locke behind you. You are now in a narrow tunnel in the hallway the ground their is a key and you bend down to pick it up to [[enter it| next room]]
+(set: $hasKey to &#39;true&#39;)
+
+&lt;img src= https://cdn.pixabay.com/photo/2014/01/02/15/30/graffiti-237656_1280.jpg&gt;</tw-passagedata><tw-passagedata pid="15" name=" next room" tags="" position="650,1275" size="100,100">you walk into a huge storm. There is a key on the ground to reset the portal
+&lt;img src= &quot;https://cdn.pixabay.com/photo/2015/11/22/15/16/lightning-1056419_1280.jpg&quot;&gt;
  you enter another room.(if: $hasKey is &#39;true&#39;)[[you enter another room | win]]
 
-(if: $hasKey is &#39;false&#39;)[]
-you see that there is a key hole but you do not have key. You are stuck here forever :( The end
+(if: $hasKey is &#39;false&#39;)
+
+[[You are stuck here forever unless you restart-&gt;Untitled Passage]] 
 
 
-</tw-passagedata><tw-passagedata pid="16" name=" win" tags="" position="650,1400" size="100,100"></tw-passagedata><tw-passagedata pid="17" name="go past chest" tags="" position="550,900" size="100,100">you continue on you journey and see some another portal 
+</tw-passagedata><tw-passagedata pid="16" name=" win" tags="" position="650,1400" size="100,100">This room puts you in a trance.
+
+[[go into trance-&gt;trance]]
+
+&lt;img src= https://cdn.pixabay.com/photo/2019/03/08/01/29/hypnosis-4041584_1280.jpg&gt;</tw-passagedata><tw-passagedata pid="17" name="go past chest" tags="" position="500,925" size="100,100">you continue on you journey and see some another portal 
 &lt;img src= https://media.istockphoto.com/id/861843758/photo/opened-door-on-a-field-during-winter-which-leads-to-a-warmer-season.jpg?s=612x612&amp;w=is&amp;k=20&amp;c=axKwQe5erczbmjAiSX495tMFbnyh57ZOeQRDzu-XL8E= &gt;
 
-[[go through portal-&gt; Volcanic]
-</tw-passagedata><tw-passagedata pid="18" name="trance" tags="" position="1000,875" size="100,100">[[continiuen with you sleep-&gt;asleep]] </tw-passagedata></tw-storydata>
+[[continue trhough portal-&gt;Volcanic]] 
+</tw-passagedata><tw-passagedata pid="18" name="trance" tags="" position="950,925" size="100,100">[[continiuen with you sleep-&gt;asleep]] </tw-passagedata><tw-passagedata pid="19" name="water" tags="" position="925,1250" size="100,100">
+&lt;img src=&quot;https://cdn.pixabay.com/photo/2013/02/13/00/28/yemeni-81175_1280.jpg&quot;&gt;
+
+you get inside the water but its boiling hot.
+[[click to a new portal before you get hurt-&gt;calm environment]]</tw-passagedata><tw-passagedata pid="20" name="village" tags="" position="1175,1275" size="100,100">Welcome to the village. Where you and safe and secure. you have achieved the goal of getting home.
+
+&lt;img src= https://cdn.pixabay.com/photo/2017/01/14/13/59/castelmezzano-1979546_1280.jpg&gt;
+
+(set:$Credits to 50)
+
+
+Go to the [[market]] or go to [[sleep]]
+&lt;img scrc=https://cdn.pixabay.com/photo/2015/01/28/23/35/hills-615429_1280.jpg&gt;</tw-passagedata><tw-passagedata pid="21" name="market" tags="" position="1100,1425" size="100,100">The market takes up all our 50 credits and you spend the rest of your days here . You can choose to stay here or go to a new destination
+[[click here to a new portal-&gt;rainy]] 
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
